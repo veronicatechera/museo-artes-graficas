@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Museo de Artes Gráficas y Culturas del Símbolo</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --indigo: #1B1F3B;
+    --gold: #C9A84C;
+    --dark: #0D0F1A;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Libre Franklin', sans-serif; }
+  .font-display { font-family: 'Playfair Display', serif; }
+</style>
+</head>
+<body class="w-full min-h-screen" style="background: #0D0F1A;">
+
+<header class="fixed top-0 left-0 w-full z-50 border-b border-[#C9A84C20]" style="background:#0D0F1A;">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 flex-wrap">
+    <a href="#inicio" class="font-display text-lg tracking-wide" style="color:#F5F0E8;">Museo de Artes Gráficas</a>
+    <ul class="flex items-center gap-5 md:gap-8 flex-wrap text-xs md:text-sm mt-2 md:mt-0">
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#inicio" style="color:#F5F0E8;">Inicio</a></li>
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#sobre-nosotros" style="color:#F5F0E8;">Sobre nosotros</a></li>
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#muestra" style="color:#F5F0E8;">Muestra</a></li>
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#objeto" style="color:#F5F0E8;">Objeto</a></li>
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#identidad-visual" style="color:#F5F0E8;">Identidad visual</a></li>
+      <li><a class="tracking-wide hover:text-[#C9A84C] transition-colors" href="#visitanos" style="color:#F5F0E8;">Visitanos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pt-16">
+
+  <!-- INICIO -->
+  <section id="inicio" class="relative w-full" style="height:100vh;">
+    <img class="absolute inset-0 w-full h-full object-cover" src="images/fachada.png" alt="Fachada del museo">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
+      <h1 class="font-display text-center text-4xl md:text-6xl max-w-3xl leading-tight" style="color:#C9A84C; font-weight:700;">Museo de Artes Gráficas y Culturas del Símbolo</h1>
+      <p class="text-center text-lg md:text-xl mt-4 max-w-2xl italic" style="color:#F5F0E8;">Donde las imágenes tienen historia</p>
+      <a href="#muestra" class="mt-8 px-6 py-3 border-2 text-sm tracking-wide transition-all hover:bg-[#C9A84C] hover:text-[#0D0F1A]" style="border-color:#C9A84C; color:#F5F0E8;">Conocé la muestra actual</a>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre-nosotros" class="min-h-screen w-full py-20 px-6" style="background:#F5F0E8;">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display text-4xl md:text-5xl mb-8" style="color:#1B1F3B; font-weight:700;">Sobre el museo</h2>
+          <p class="text-lg leading-relaxed mb-12" style="color:#1B1F3B;">Somos un espacio dedicado a la cultura visual y los sistemas de representación simbólica a través del tiempo. Estudiamos los objetos no solo por lo que son, sino por lo que dicen: sobre quién los hizo, para quién, y qué imaginarios pusieron en circulación.</p>
+          <div class="space-y-3" style="color:#1B1F3B;">
+            <p class="text-sm flex items-start gap-3"><span>📍</span> <span>Av. del Patrimonio 142, Colonia del Sacramento, Uruguay</span></p>
+            <p class="text-sm flex items-start gap-3"><span>✉</span> <span>contacto@museoartegrafico.uy</span></p>
+          </div>
+        </div>
+        <div>
+          <img class="w-full h-96 object-cover rounded-lg shadow-lg" src="images/sala.png" alt="Sala de exhibición">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUESTRA -->
+  <section id="muestra" class="min-h-screen w-full py-20 px-6" style="background:#1B1F3B;">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img class="w-full h-96 object-cover rounded-lg shadow-lg" src="images/vitrina.png" alt="Vitrina con el mazo de tarot exhibido">
+        </div>
+        <div class="order-1 md:order-2">
+          <p class="text-xs tracking-widest uppercase mb-3" style="color:#C9A84C;">Muestra actual</p>
+          <h2 class="font-display text-3xl md:text-4xl mb-6 leading-snug" style="color:#F5F0E8; font-weight:700;">Imágenes que ordenan el mundo</h2>
+          <p class="text-sm uppercase tracking-wide mb-6" style="color:#C9A84C;">Sistemas simbólicos y cultura visual en Occidente</p>
+          <p class="text-base leading-relaxed" style="color:#F5F0E8;">Una muestra dedicada a los lenguajes visuales que, a lo largo de la historia, organizaron creencias, conocimientos e imaginarios colectivos. Desde sistemas de escritura antiguos hasta mazos de cartas ilustrados, esta exhibición invita a pensar las imágenes no solo como arte, sino como herramientas con las que distintas culturas dieron sentido al mundo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETO -->
+  <section id="objeto" class="min-h-screen w-full py-20 px-6 flex items-center" style="background:#F5F0E8;">
+    <div class="max-w-3xl mx-auto w-full">
+      <div class="border rounded-lg p-8 md:p-12" style="background:#FFFFFF; border-color:#1B1F3B20;">
+        <p class="text-xs tracking-widest uppercase mb-2" style="color:#1B1F3B99;">Museo de Artes Gráficas y Culturas del Símbolo</p>
+        <h2 class="font-display text-2xl md:text-3xl mb-1" style="color:#1B1F3B; font-weight:700;">Tarot de A. E. Waite</h2>
+        <p class="text-sm mb-6" style="color:#1B1F3B99;">Edición en español · Arkano Books, © 1997</p>
+        <hr class="my-6" style="border-color:#1B1F3B20;">
+        <div class="text-base leading-relaxed space-y-4" style="color:#1B1F3B; font-family:'Playfair Display', serif;">
+          <p>En 1909, el ocultista Arthur Edward Waite le encargó a una artista llamada Pamela Colman Smith que ilustrara cada una de las 78 cartas de un nuevo mazo de tarot. Ella lo hizo. Waite se llevó el crédito. Durante décadas, el mazo se conoció solo por su nombre.</p>
+          <p>Hoy ese mazo es el más reproducido y reconocido del mundo. Sus imágenes —el loco al borde del precipicio, la sacerdotisa entre columnas, el mundo danzando dentro de una corona de laurel— se convirtieron en un lenguaje visual compartido que atraviesa el arte, el diseño y la cultura popular. Cada carta combina simbolismo hermético, referencias numerológicas y una narrativa visual que invita a la interpretación.</p>
+          <p>El ejemplar que se exhibe aquí es una edición en español publicada por Arkano Books, valorada por reproducir con gran fidelidad los colores originales de 1909. Incluye las 78 cartas impresas en cartón plastificado y un manual redactado por el propio Waite. Llegó desde España hasta manos uruguayas, y de una colección particular a esta sala: un recorrido que habla tanto como las imágenes que lleva dentro.</p>
+        </div>
+        <hr class="my-6" style="border-color:#1B1F3B20;">
+        <div class="grid grid-cols-2 gap-4 text-xs">
+          <div><p style="color:#1B1F3B99;">Autor del diseño</p><p class="font-medium mt-1" style="color:#1B1F3B;">A. E. Waite / P. C. Smith, 1909</p></div>
+          <div><p style="color:#1B1F3B99;">Técnica</p><p class="font-medium mt-1" style="color:#1B1F3B;">Impresión offset · cartón plastificado</p></div>
+          <div><p style="color:#1B1F3B99;">Procedencia</p><p class="font-medium mt-1" style="color:#1B1F3B;">Colección particular · donación</p></div>
+          <div><p style="color:#1B1F3B99;">Nº inventario</p><p class="font-medium mt-1" style="color:#1B1F3B;">MAGS-2026-001</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTIDAD VISUAL -->
+  <section id="identidad-visual" class="min-h-screen w-full py-20 px-6" style="background:#1B1F3B;">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img class="w-full h-96 object-contain" src="images/logo.png" alt="Isotipo del museo">
+        </div>
+        <div>
+          <p class="text-xs tracking-widest uppercase mb-3" style="color:#C9A84C;">Identidad visual</p>
+          <h2 class="font-display text-3xl md:text-4xl mb-6" style="color:#F5F0E8; font-weight:700;">El isotipo</h2>
+          <p class="text-base leading-relaxed mb-4" style="color:#F5F0E8;">El isotipo transforma la estructura clásica de una carta en una roseta central, símbolo de guía y expansión cultural. En sus esquinas aparecen cuatro glifos que recorren la historia de la escritura: cuneiforme, jeroglífico maya, nudo celta y matriz de píxeles, desde las primeras formas de expresión escrita hasta el lenguaje digital.</p>
+          <p class="text-sm italic" style="color:#C9A84C;">Diseño generado con inteligencia artificial (Gemini) como parte de este proyecto académico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITANOS -->
+  <section id="visitanos" class="min-h-screen w-full py-20 px-6 flex items-center" style="background:#F5F0E8;">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-display text-3xl md:text-4xl mb-8" style="color:#1B1F3B; font-weight:700;">Visitanos</h2>
+      <div class="space-y-4 text-base" style="color:#1B1F3B;">
+        <p>📍 Av. del Patrimonio 142, Colonia del Sacramento, Uruguay</p>
+        <p>🕐 Martes a domingo, 10:00 a 18:00 hs</p>
+        <p>✉ contacto@museoartegrafico.uy</p>
+        <p>📷 @museoartegrafico.uy</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="w-full py-8 px-6 text-center" style="background:#0D0F1A;">
+  <p class="text-xs" style="color:#F5F0E899;">Este sitio es un proyecto ficticio creado con fines académicos para el curso de Museología — Universidad de la República, 2026. No representa una institución real.</p>
+</footer>
+
+</body>
+</html>
